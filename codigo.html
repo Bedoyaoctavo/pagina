@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Otra actividad :v</title>
+</head>
+
+	<style>
+.fondo
+{
+	position: absolute;
+	background: url("cup.jpg");
+	background-size: cover;
+	width:  1366px;
+   	height: 750px;
+}
+	.nombre{
+		position: absolute;
+    	top: 310px;
+    	left: 160px;
+    	border: solid black 2px;
+    	width: 200px;
+    	height: 40px;
+	}
+	.nose{
+    	position: absolute;
+   		top: 210px;
+   		left: 350px;
+   		border: solid #ffc305 4px;
+   		width: 500px;   		
+   		height: 250px;
+   		background: #c70039;
+    }
+
+    .presionable{
+    	position: absolute;
+    	top: 160px;
+    	left: 160px;
+    	border: solid black 2px;
+    	width: 200px;
+    	height: 40px;
+    
+    }
+    .norteño{
+    	position: absolute;
+  		top: 30px;
+   		left: 600px;
+   		border: solid #900c3f 4px;
+   		width: 300px;
+   		height: 200px;
+   		font-size: 25px;
+   		background: #581845;
+    }
+	</style>
+	<div class="fondo">
+	<div class="nose">
+		 	<script>
+	function calculo(){
+	k=Number(dato1.value)
+	r=Number(dato2.value);
+	i=Number(dato3.value);
+	s=Number(dato4.value);
+	resu=r*i 
+	grasa=s-resu
+			uwu.innerHTML="el valor total de su compra es: "+resu+"y lo que le sobra es: "+grasa
+			if(grasa>resu)
+			{
+uwu.innerHTML="no tiene suficiente dinero"
+			}
+			if (p>25)
+			{
+				uwu.innerHTML="f no hay producto vuelva luego"
+
+			}
+
+	}
+
+ 	</script>
+	<form> 
+		<center>
+		<label>TIENDITA HUMILDE</label>
+		<br>
+		<br>
+		<br>
+		<br>
+		<input type="text" id="dato1" placeholder="producto">
+		<input type="text" id="dato2" placeholder="precio">
+		<input type="text" id="dato3" placeholder="cantidad">
+		<input type="text" id="dato4" placeholder="nuestro dinero">
+		
+
+		<div class="norteño">
+		<center>
+		<label>PRODUCTOS</label>
+		<br>
+		<label>carne cantidad:  25</label>
+        <br>
+		<label>papas_fritas cantidad:  25</label>
+		<br>
+		<label>agua cantidad:  25</label>
+		<br>
+		<label>carne precio:  3500</label>
+        <br>
+		<label>papas_fritas precio:  2500</label>
+		<br>
+		<label>agua precio:  100</label>
+		<br>
+		</div>
+
+	</center>
+	<center><div class="presionable" onclick="calculo()" id="uwu">Presione aqui</div></center>	
+</form>
+</body>
+</html>
